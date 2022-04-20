@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+     <h1>Consulta</h1>
+		<form th:action="@{/consultarVeterinario}"
+		method="POST" th:object="${veterinario}">
+			id:<input type="text" 
+					th:field="*{id}"><br/>
+			nome:<input type="text" 
+					th:field="*{nome}"><br/>
+			crmv:<input type="text" 
+					th:field="*{crmv}"><br/>
+			especialista:<input type="text" 
+					th:field="*{duracao}"><br/>
+		<input type="submit" value="Consultar">
+		</form>
+</body>
+</html>
